@@ -13,7 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-			if ($text == "สวัสดี")
+			if ($text == "สวัสดี" || $text == "หวัดดี" || $text == "ดี"|| $text == "ดีๆ")
 			{
 				$text2 = "สวัสดีครับ";
 			}
@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			}
 			if ($text == "ใครหล่อที่สุด?")
 			{
-				$text2 = "เฟิร์สไง ^_^";
+				$text2 = "คนที่คุณก็รู้ว่าใคร.. >_<";
 			}
 			if ($text == "โสดไหม?")
 			{
