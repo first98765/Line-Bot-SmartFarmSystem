@@ -13,13 +13,13 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-			if ($text == "Hi")
+			if ($text == "สวัสดี")
 			{
-				$text2 = "Hello";
+				$text2 = "สวัสดีครับ";
 			}
 			if ($text == "How are you?")
 			{
-				$text2 = "I'm fine. :)";
+				$text2 = "I'm fine :)";
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
