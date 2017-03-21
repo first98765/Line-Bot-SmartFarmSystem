@@ -15,8 +15,8 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			
-			//Build message to reply back
+
+			// Build message to reply back
 			$messages = [
 				'type' => 'text',
 				'text' => $text
