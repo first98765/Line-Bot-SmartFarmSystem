@@ -15,16 +15,16 @@ if (!is_null($events['events'])) {
 			 = $event['message']['text'];
 			switch ($text) 
 			{
-    			case $text="สวัสดี":
+    			case ($text="สวัสดี"):
         			$text2 = "สวัสดีครับ";
         		break;
-    			case $text="1+1 ได้เท่าไหร่?":
+    			case ($text="1+1 ได้เท่าไหร่?"):
         			$text2 = "ได้ 2 ไง คิดไม่ได้หรอ";
         		break;
-    			case $text="ใครหล่อที่สุด?":
+    			case ($text="ใครหล่อที่สุด?"):
         			$text2 = "เฟิร์สไง ^_^";
         		break;
-        		case $text="โสดไหม":
+        		case ($text="โสดไหม"):
         			$text2 = "โสดตัวเท่าบ้าน";
         		break;
     			default:
