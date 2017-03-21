@@ -12,23 +12,22 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			 = $event['message']['text'];
-			switch ($text) 
+			$text = $event['message']['text'];
+			if ($text == " «— ¥’")
 			{
-    			case "‡∏™‡∏ß‡∏±‡∏™‡∏î‡∏µ":
-        			$text2 = "‡∏™‡∏ß‡∏±‡∏™‡∏î‡∏µ‡∏Ñ‡∏£‡∏±‡∏ö";
-        		break;
-    			case "1+1 ‡πÑ‡∏î‡πâ‡πÄ‡∏ó‡πà‡∏≤‡πÑ‡∏´‡∏£‡πà?":
-        			$text2 = "‡πÑ‡∏î‡πâ 2 ‡πÑ‡∏á ‡∏Ñ‡∏¥‡∏î‡πÑ‡∏°‡πà‡πÑ‡∏î‡πâ‡∏´‡∏£‡∏≠";
-        		break;
-    			case "‡πÉ‡∏Ñ‡∏£‡∏´‡∏•‡πà‡∏≠‡∏ó‡∏µ‡πà‡∏™‡∏∏‡∏î?":
-        			$text2 = "‡πÄ‡∏ü‡∏¥‡∏£‡πå‡∏™‡πÑ‡∏á ^_^";
-        		break;
-        		case "‡πÇ‡∏™‡∏î‡πÑ‡∏´‡∏°":
-        			$text2 = "‡πÇ‡∏™‡∏î‡∏ï‡∏±‡∏ß‡πÄ‡∏ó‡πà‡∏≤‡∏ö‡πâ‡∏≤‡∏ô";
-        		break;
-    			default:
-        		
+				$text2 = " «— ¥’§√—∫";
+			}
+			if ($text == "1+1 ‰¥È‡∑Ë“‰À√Ë?")
+			{
+				$text2 = "‰¥È 2 ‰ß §‘¥‰¡Ë‰¥ÈÀ√Õ";
+			}
+			if ($text == "„§√À≈ËÕ∑’Ë ÿ¥?")
+			{
+				$text2 = "‡ø‘√Ï ‰ß ^_^";
+			}
+			if ($text == "‚ ¥‰À¡?")
+			{
+				$text2 = "‚ ¥µ—«‡∑Ë“∫È“π";
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
