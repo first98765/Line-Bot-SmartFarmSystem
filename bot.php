@@ -17,9 +17,17 @@ if (!is_null($events['events'])) {
 			{
 				$text2 = "สวัสดีครับ";
 			}
-			if ($text == "How are you?")
+			if ($text == "1+1 ได้เท่าไหร่?")
 			{
-				$text2 = "I'm fine :)";
+				$text2 = "ได้ 2 ไง คิดไม่ได้หรอ";
+			}
+			if ($text == "ใครหล่อที่สุด?")
+			{
+				$text2 = "เฟิร์สไง ^_^";
+			}
+			if ($text == "โสดไหม?")
+			{
+				$text2 = "โสดตัวเท่าบ้าน";
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
