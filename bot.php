@@ -17,8 +17,9 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			if($text == "Hi")
 			{
-				$messages = "Hello I'm Bot"
+				$messages = ["Hello I'm Bot"];
 			}
+
 			// Build message to reply back
 			// $messages = [
 			// 	'type' => 'text',
