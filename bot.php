@@ -60,7 +60,12 @@ if (!is_null($events['events'])) {
 			{
 				$text2 = "สร้างโดย คุณสุภกิจ บัวสอด";
 			}
-
+			if ($text == "บ้ายบาย" 
+				|| $text == "บาย" 
+				|| $text == "กูดบาย" 
+			{
+				$text2 = "โอเคร.. ไว้เจอกันใหม่นะ!";
+			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
