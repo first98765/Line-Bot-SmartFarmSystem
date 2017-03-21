@@ -17,6 +17,10 @@ if (!is_null($events['events'])) {
 			{
 				$text2 = "Hello";
 			}
+			if ($text == "How are you?")
+			{
+				$text2 = "I'm fine. :)";
+			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
