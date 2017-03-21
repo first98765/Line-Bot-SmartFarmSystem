@@ -29,6 +29,15 @@ if (!is_null($events['events'])) {
 			{
 				$text2 = "โสดตัวเท่าบ้าน";
 			}
+			if ($text == "ชื่ออะไร?")
+			{
+				$text2 = "ผมชื่อ 'Smart Farm System' ครับ ผมเป็น บอท ตอบข้อความอัตโนมัติครับ";
+			}
+			if ($text == "ใครเป็นคนสร้าง?")
+			{
+				$text2 = "สร้างโดย คุณสุภกิจ บัวสอด";
+			}
+
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 

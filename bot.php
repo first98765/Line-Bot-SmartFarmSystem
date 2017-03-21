@@ -13,29 +13,27 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-			if ($text == "สวัสดี")
-			{
-				$text2 = "สวัสดีครับ";
-			}
-			if ($text == "1+1 ได้เท่าไหร่?")
-			{
-				$text2 = "ได้ 2 ไง คิดไม่ได้หรอ";
-			}
-			if ($text == "ใครหล่อที่สุด?")
-			{
-				$text2 = "เฟิร์สไง ^_^";
-			}
-			if ($text == "โสดไหม?")
-			{
-				$text2 = "โสดตัวเท่าบ้าน";
-			}
-			if ($text == "ชื่ออะไร?")
-			{
-				$text2 = "ผมชื่อ 'Smart Farm System' ครับ ผมเป็น บอท ตอบข้อความอัตโนมัติครับ";
-			}
-			if ($text == "ใครเป็นคนสร้าง?")
-			{
-				$text2 = "สร้างโดย คุณสุภกิจ บัวสอด";
+			switch ($text) {
+			    case 'สวัสดี':
+			        $text2 = "สวัสดีครับ";
+			        break;
+			    case '1+1 ได้เท่าไหร่?':
+			        $text2 = "ได้ 2 ไง คิดไม่ได้หรอ";
+			        break;
+			    case 'ใครหล่อที่สุด?':
+			        $text2 = "เฟิร์สไง ^_^";
+			        break;
+			    case 'โสดไหม?':
+			    	$text2 = "โสดตัวเท่าบ้าน";
+			    	break;
+			    case 'ชื่ออะไร?'
+			    	$text2 = "ผมชื่อ 'Smart Farm System' ครับ ผมเป็น บอท ตอบข้อความอัตโนมัติครับ";
+			    	break;
+			    case 'ใครเป็นคนสร้าง?':
+			    	$text2 = "สร้างโดย คุณสุภกิจ บัวสอด";
+			    	break;
+			    default:
+			        $text2 = "ไม่สามารถตอบคำถามได้.."
 			}
 
 			// Get replyToken
