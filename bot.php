@@ -14,22 +14,22 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			switch ($text) {
-			    case สวัสดี:
+			    case "สวัสดี":
 			        $text2 = "สวัสดีครับ";
 			        break;
-			    case 1+1 ได้เท่าไหร่?:
+			    case "1+1 ได้เท่าไหร่?":
 			        $text2 = "ได้ 2 ไง คิดไม่ได้หรอ";
 			        break;
-			    case ใครหล่อที่สุด?:
+			    case "ใครหล่อที่สุด?":
 			        $text2 = "เฟิร์สไง ^_^";
 			        break;
-			    case โสดไหม?:
+			    case "โสดไหม?":
 			    	$text2 = "โสดตัวเท่าบ้าน";
 			    	break;
-			    case ชื่ออะไร?
+			    case "ชื่ออะไร?":
 			    	$text2 = "ผมชื่อ 'Smart Farm System' ครับ ผมเป็น บอท ตอบข้อความอัตโนมัติครับ";
 			    	break;
-			    case ใครเป็นคนสร้าง?:
+			    case "ใครเป็นคนสร้าง?":
 			    	$text2 = "สร้างโดย คุณสุภกิจ บัวสอด";
 			    	break;
 			    default:
